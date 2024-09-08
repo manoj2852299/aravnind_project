@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "netlify deploy --prod"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
@@ -12,8 +12,6 @@
   "dependencies": {
     "body-parser": "^1.20.2",
     "express": "^4.19.2",
-    "netlify-cli": "^17.35.0",
-    "netlify-lambda": "^2.0.16",
     "serverless-http": "^3.2.0",
     "sqlite3": "^5.1.7"
   }
