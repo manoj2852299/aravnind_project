@@ -1,8 +1,16 @@
 const express = require('express');
+const cors = require('cors');
 const path = require('path');
 const bodyParser = require('body-parser');
 const sqlite3 = require('sqlite3').verbose();
 const app = express();
+
+app.use(cors({
+    origin: '*',         // Allow all origins
+    methods: '*',        // Allow all HTTP methods
+    allowedHeaders: '*', // Allow all headers
+  }));
+  
 app.use(bodyParser.json());
 
 app.use('/images', express.static(path.join(__dirname, 'images')));
